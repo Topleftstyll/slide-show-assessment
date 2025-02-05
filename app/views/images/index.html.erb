@@ -1,3 +1,11 @@
-<% @images.each do |image| %>
-  <%= image_tag(image.url, width: 200, height: 200) %>
-<% end %>
+<div class="carousel" data-controller="slideshow">
+  <button class="carousel-btn prev" data-action="click->slideshow#prev">&#10094;</button>
+  <button class="carousel-btn next" data-action="click->slideshow#next">&#10095;</button>
+  <div class="slides">
+    <% @images.each_with_index do |image, index| %>
+      <div class="slide <%= 'hidden' if index != 0 %>" data-slideshow-target="slide">
+        <%= image_tag image.url %>
+      </div>
+    <% end %>
+  </div>
+</div>
