@@ -12,17 +12,16 @@ Things you may want to cover:
 Files to note:
 
   - Models:
-    * models/image.rb
+    * [Image](app/models/image.rb)
 
   - Views:
-    * images/index.html.erb
+    * [Slide Show](app/views/images/index.html.erb)
 
   - Controllers:
-    * controllers/images_controller.rb
+    * [Image](app/controllers/images_controller.rb)
 
   - Stimulus:
-    * javascript/controllers/slideshow_controller.js
+    * [Slideshow Controller](app/javascript/controllers/slideshow_controller.js)
 
   - CSS:
-    * stylesheets/application.css
-    * stylesheets/carousel.css
+    * [Carousel](app/assets/stylesheets/carousel.css)
