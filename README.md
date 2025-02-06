@@ -18,7 +18,7 @@ Files to note:
   - Views:
     * [Slide Show](app/views/images/index.html.erb)
     * [Total Visits Partial](app/views/images/_visit_counts.html.erb)
-	  * [Create Visit Turbo Stream](app/views/images/create_visit.turbo_stream.erb)
+    * [Create Visit Turbo Stream](app/views/images/create_visit.turbo_stream.erb)
 
   - Controllers:
     * [Image](app/controllers/images_controller.rb)
