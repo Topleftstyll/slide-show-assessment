@@ -1,8 +1,13 @@
-.carousel {
+.carousel-container {
   width: 600px;
   height: 400px;
+}
+
+.carousel {
   background-color: black;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .slides {
@@ -16,6 +21,7 @@
 .slide {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .slide > img {
@@ -23,6 +29,13 @@
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+.slide > h4 {
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .carousel-btns {
@@ -60,4 +73,10 @@
 
 .carousel-btn.next {
   right: 1rem;
+}
+
+.image-counts {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

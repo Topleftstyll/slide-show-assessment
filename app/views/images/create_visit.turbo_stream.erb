@@ -1,0 +1,4 @@
+<%= turbo_stream.replace @image.id do %>
+   <%= render partial: 'visit_counts', locals: { image: @image } %>
+<% end %>
+
