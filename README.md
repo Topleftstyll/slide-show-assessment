@@ -4,7 +4,8 @@ The images need to be seeded into the database so that we can pull the images an
 
 ![CleanShot 2025-02-07 at 15 40 44](https://github.com/user-attachments/assets/88c50dde-cb40-46d0-af63-1003b563d499)
 
-Things you may want to cover:
+
+Setup Instructions:
 
 * rails db:create to create the database
 * rails db:migrate to migrate the migrations
