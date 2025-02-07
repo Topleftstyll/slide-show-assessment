@@ -16,7 +16,7 @@ export default class extends Controller {
       nextIndex = 0;
     }
 
-    this.showSlide(nextIndex, "slide-in-left", "slide-out-right");
+    this.showSlide(nextIndex, "slide-in-right", "slide-out-left");
     this.createVisit(nextIndex);
   }
 
@@ -28,7 +28,7 @@ export default class extends Controller {
       prevIndex = this.slideTargets.length - 1;
     }
 
-    this.showSlide(prevIndex, "slide-in-right", "slide-out-left");
+    this.showSlide(prevIndex, "slide-in-left", "slide-out-right");
     this.createVisit(prevIndex);
   }
 

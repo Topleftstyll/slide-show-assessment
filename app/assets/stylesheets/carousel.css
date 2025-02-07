@@ -4,7 +4,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-image: url('https://t3.ftcdn.net/jpg/02/62/71/08/360_F_262710803_CAKuDCLCdRsNLRhyI6hollZZmQrziJrk.jpg');
+  background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*b8WS2iEvZCQYlXq46gKpqw.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,11 +98,10 @@
 
 .visit-count-container {
   background: rgba(255, 255, 255, 0.20);
-  border-radius: 100%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 1);
-  width: 60px;
-  height: 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +114,7 @@
 
 .count-text {
   font-size: 16pt;
+  padding-bottom: 5px;
 }
 
 .count-title {
