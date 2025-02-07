@@ -2,7 +2,7 @@
 Simple slide show to show 4 images from a folder and count the number of views on each photo.
 The images need to be seeded into the database so that we can pull the images and create visits for each image when its viewed.
 
-![CleanShot 2025-02-07 at 15 28 13](https://github.com/user-attachments/assets/3651badf-a49f-47ce-b56a-3df6e692f28f)
+![CleanShot 2025-02-07 at 15 40 44](https://github.com/user-attachments/assets/88c50dde-cb40-46d0-af63-1003b563d499)
 
 Things you may want to cover:
 
