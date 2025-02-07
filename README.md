@@ -2,6 +2,8 @@
 Simple slide show to show 4 images from a folder and count the number of views on each photo.
 The images need to be seeded into the database so that we can pull the images and create visits for each image when its viewed.
 
+![CleanShot 2025-02-07 at 15 28 13](https://github.com/user-attachments/assets/3651badf-a49f-47ce-b56a-3df6e692f28f)
+
 Things you may want to cover:
 
 * rails db:create to create the database
