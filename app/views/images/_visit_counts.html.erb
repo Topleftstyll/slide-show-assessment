@@ -1,5 +1,6 @@
 <% animate = local_assigns.fetch(:fade_in_animation, false)%>
 
-<div id=<%= image.id %> class="<%= animate ? 'fade-in' : '' %>" >
-  <p><%= "Img #{image.id}: #{image.visits.count}" %></p>
+<div id=<%= image.id %> class="visit-count-container <%= animate ? 'fade-in' : '' %>" >
+  <p class="count-text"><%= image.visits.count %></p>
+  <p class="count-title"><%= "Img: #{image.id}" %></p>
 </div>

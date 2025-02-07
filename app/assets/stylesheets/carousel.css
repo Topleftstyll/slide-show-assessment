@@ -4,6 +4,10 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  background-image: url('https://t3.ftcdn.net/jpg/02/62/71/08/360_F_262710803_CAKuDCLCdRsNLRhyI6hollZZmQrziJrk.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel-container {
@@ -14,7 +18,7 @@
 .carousel {
   background-color: black;
   position: relative;
-  height: 90%;
+  height: 85%;
   width: 100%;
 }
 
@@ -87,11 +91,37 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 10%;
+  height: 15%;
   width: 100%;
 }
 
-.fade-in { animation: fadeIn 3s; }
+.visit-count-container {
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.visit-count-container > p {
+  margin: 0;
+}
+
+.count-text {
+  font-size: 16pt;
+}
+
+.count-title {
+  font-size: 10pt;
+}
+
+
+.fade-in { animation: fadeIn 2s; }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -103,11 +133,32 @@
     width: 60%;
     height: 50%;
   }
+
+  .carousel {
+    height: 80%;
+  }
+
+  .image-counts {
+    height: 20%;
+  }
+
+  .visit-count-container {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .carousel-container {
     width: 90%;
-    height: 30%;
+    height: 40%;
+  }
+
+  .carousel {
+    height: 75%;
+  }
+
+  .image-counts {
+    height: 25%;
   }
 }
