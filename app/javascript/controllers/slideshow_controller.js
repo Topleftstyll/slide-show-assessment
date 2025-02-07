@@ -16,9 +16,8 @@ export default class extends Controller {
       nextIndex = 0;
     }
 
-    this.indexValue = nextIndex;
-    this.showSlide(this.indexValue);
-    this.createVisit(this.indexValue);
+    this.showSlide(nextIndex, "slide-in-left", "slide-out-right");
+    this.createVisit(nextIndex);
   }
 
   prev(event) {
@@ -29,15 +28,32 @@ export default class extends Controller {
       prevIndex = this.slideTargets.length - 1;
     }
 
-    this.indexValue = prevIndex;
-    this.showSlide(this.indexValue);
-    this.createVisit(this.indexValue);
+    this.showSlide(prevIndex, "slide-in-right", "slide-out-left");
+    this.createVisit(prevIndex);
   }
 
+  showSlide(index, inDirection, outDirection) {
+    const oldSlide = this.slideTargets[this.indexValue];
+    const newSlide = this.slideTargets[index];
+    oldSlide.classList.add(outDirection);
 
-  showSlide(index) {
-    this.slideTargets.forEach((slide) => slide.classList.add("hidden"));
-    this.slideTargets[index].classList.remove("hidden");
+    this.slideAnimation(oldSlide, newSlide, outDirection, inDirection)
+
+    this.indexValue = index;
+  }
+
+  slideAnimation(oldSlide, newSlide, outDirection, inDirection) {
+    oldSlide.addEventListener('animationend', () => {
+      oldSlide.classList.add("hidden");
+      oldSlide.classList.remove(outDirection);
+
+      newSlide.classList.remove("hidden");
+      newSlide.classList.add(inDirection);
+
+      newSlide.addEventListener('animationend', () => {
+        newSlide.classList.remove(inDirection);
+      }, { once: true });
+    }, { once: true });
   }
 
   createVisit(index) {
