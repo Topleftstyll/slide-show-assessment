@@ -8,9 +8,9 @@ The images need to be seeded into the database so that we can pull the images an
 Setup Instructions:
 
 * type `bundle` into the console
-* rails db:create to create the database
-* rails db:migrate to migrate the migrations
-* rails db:seed to seed the images into the database
+* `rails db:create` to create the database
+* `rails db:migrate` to migrate the migrations
+* `rails db:seed` to seed the images into the database
 
 Files to note:
 
