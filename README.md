@@ -1,7 +1,6 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple slide show to show 4 images from a folder and count the number of views on each photo.
+The images need to be seeded into the database so that we can pull the images and create visits for each image when its viewed.
 
 Things you may want to cover:
 
