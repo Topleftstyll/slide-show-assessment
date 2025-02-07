@@ -1,4 +1,4 @@
 <%= turbo_stream.replace @image.id do %>
-   <%= render partial: 'visit_counts', locals: { image: @image } %>
+   <%= render partial: 'visit_counts', locals: { image: @image, fade_in_animation: true } %>
 <% end %>
 

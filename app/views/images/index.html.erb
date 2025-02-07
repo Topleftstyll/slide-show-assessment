@@ -1,19 +1,21 @@
-<div class="carousel-container">
-  <div class="image-counts">
-    <% @images.each_with_index do |image, index| %>
-      <%= render partial: 'visit_counts', locals: { image: image } %>
-    <% end %>
-  </div>
-  <div class="carousel" data-controller="slideshow">
-    <%= button_to "&#10094;".html_safe, '#', method: :post, data: { action: 'click->slideshow#prev' }, class: "carousel-btn prev" %>
-    <%= button_to "&#10095;".html_safe, '#', method: :post, data: { action: 'click->slideshow#next' }, class: "carousel-btn next" %>
-    <div class="slides">
+<section class="carousel-section">
+  <div class="carousel-container">
+    <div class="image-counts">
       <% @images.each_with_index do |image, index| %>
-        <div id=<%= image.id %> class="slide <%= 'hidden' if index != 0 %>" data-slideshow-target="slide">
-          <h4>Image: <%= image.id %></h4>
-          <%= image_tag image.url %>
-        </div>
+        <%= render partial: 'visit_counts', locals: { image: image } %>
       <% end %>
+    </div>
+    <div class="carousel" data-controller="slideshow">
+      <%= button_to "&#10094;".html_safe, '#', method: :post, data: { action: 'click->slideshow#prev' }, class: "carousel-btn prev" %>
+      <%= button_to "&#10095;".html_safe, '#', method: :post, data: { action: 'click->slideshow#next' }, class: "carousel-btn next" %>
+      <div class="slides">
+        <% @images.each_with_index do |image, index| %>
+          <div id=<%= image.id %> class="slide <%= 'hidden' if index != 0 %>" data-slideshow-target="slide">
+            <h4>Image: <%= image.id %></h4>
+            <%= image_tag image.url %>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
