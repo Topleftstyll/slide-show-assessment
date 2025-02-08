@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-  validates :url, presence: true
+  has_one_attached :file
   has_many :visits
 end
